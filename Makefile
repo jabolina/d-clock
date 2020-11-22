@@ -31,7 +31,7 @@ deps: # @HELP install dependencies
 	go get -t -d -v ./...
 
 build: # @HELP build the packages
-	sh $(PWD)/scripts/build.sh
+	$(PWD)/scripts/build.sh
 
 ci: # @HELP executes on CI
 ci: deps test dep-linter lint
